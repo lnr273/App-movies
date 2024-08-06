@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     z-index: 9999;
 }
 
@@ -27,4 +26,23 @@
     color: #fff;
     padding-inline: 1rem;
     padding-inline: 18px;
+}
+
+@media (max-width: 480px) {
+    .header span {
+        font-size: 1.5rem;
+    }
+    .header a {
+        font-size: 0.95rem;
+        padding-inline: 0.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .header span {
+        font-size: 1.5rem;
+    }
+    .header a {
+        font-size: 0.75rem;
+    }
 }

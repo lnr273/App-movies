@@ -5,13 +5,15 @@ import Container from '../../components/Container/Container.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import Header from '../../components/Header/Header.jsx';
 import Carousel from '../../components/Carousel/Carousel.jsx';
+import ScrollToTopBtn from '../../components/ScrollToTopBtn/ScrollToTopBtn.jsx';
 
 function Home() {
 
   return(
     <>
+      <ScrollToTopBtn />
       <Header/>
-      <Banner img="favoritos"/>
+      <Banner img="home"/>
       <Container>
 
         {

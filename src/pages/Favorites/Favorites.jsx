@@ -3,6 +3,8 @@ import Header from '../../components/Header/Header.jsx'
 import Container from '../../components/Container/Container.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import VideoList from '../../components/VideoList/VideoList.jsx'
+import Banner from '../../components/Banner/Banner.jsx'
+import ScrollToTopBtn from '../../components/ScrollToTopBtn/ScrollToTopBtn.jsx'
 import { useFavoriteContext } from '../../contexts/Favorites.jsx'
 
 function Favorites() {
@@ -10,7 +12,9 @@ function Favorites() {
 
     return(
         <>
+            <ScrollToTopBtn />
             <Header/>
+            <Banner img="favoritos"/>
             <Container>
                 <section className={styles.favorites}>
                     <h2>Meus Favoritos</h2>
