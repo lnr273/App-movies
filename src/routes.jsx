@@ -5,6 +5,7 @@ import Page404 from "./pages/Page404/Page404.jsx";
 import Search from "./pages/Search/Search.jsx";
 import Favorites from "./pages/Favorites/Favorites.jsx";
 import FavoritesProvider from "./contexts/Favorites.jsx";
+import VideoCadaster from "./pages/VideoCadaster/VideoCadaster.jsx";
 
 function AppRoutes() {
     return(
@@ -15,6 +16,7 @@ function AppRoutes() {
                     <Route path="/watch/:id" element={ <Watch/> }></Route>
                     <Route path="/search" element={ <Search/>}></Route>
                     <Route path="/favorites" element={ <Favorites/>}></Route>
+                    <Route path="/cadaster" element={ <VideoCadaster/>}></Route>
                     <Route path="*" element={ <Page404/> }></Route>
                 </Routes>
             </FavoritesProvider>
